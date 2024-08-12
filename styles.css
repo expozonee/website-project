@@ -102,6 +102,10 @@ footer {
   margin-inline: auto;
 }
 
+footer p {
+  font-size: 1.1rem;
+}
+
 .main-header-section {
   display: flex;
   justify-content: space-between;
@@ -112,9 +116,10 @@ footer {
 }
 
 .desc-p {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Pacifico", cursive;
   font-size: 1.3rem;
-  color: #333;
+  text-align: center;
+  color: var(--primary-color);
   margin-top: 1rem;
 }
 
