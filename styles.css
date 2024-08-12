@@ -288,7 +288,7 @@ ol {
 }
 
 .about-section p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--tertiary-color);
 }
 
@@ -311,6 +311,6 @@ ol {
 }
 
 .contact-section p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--tertiary-color);
 }
