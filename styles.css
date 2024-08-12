@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #3467d6;
+  --secondary-color: #f8f8f8;
+  --tertiary-color: #333;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -118,9 +124,9 @@ img {
 .recipes {
   width: 80%;
   margin-inline: auto;
-  padding-block: 6rem;
+  padding-block: 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 /* .recipes-section-heading {
@@ -136,4 +142,60 @@ img {
   align-items: center;
   flex-direction: column;
   padding-block: 3rem;
+}
+
+.recipe-card {
+  margin: 2rem;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.recipe-card > img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 0;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.recipe-card > .card-content {
+  padding: 1rem;
+}
+
+.card-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-cta > * {
+  width: 80%;
+  margin-block: 1.5rem;
+}
+
+.card-cta button {
+  width: 100%;
+}
+
+.card-cta button:hover {
+  background-color: #d39510;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.card-content p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.transparent {
+  background-color: transparent;
 }
