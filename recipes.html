@@ -29,8 +29,18 @@
     <!-- recipes section -->
     <section class="recipes-section transparent">
       <h2 class="recipes-section-heading">All Recipes</h2>
+      <section id="search-bar">
+        <form
+          action=""
+          method="post"
+          onsubmit="this.action='#' + document.getElementById('search-input').value;"
+        >
+          <input id="search-input" placeholder="Search for recipes..." />
+          <button type="submit">Search</button>
+        </form>
+      </section>
       <div class="recipes">
-        <div class="recipe-card">
+        <div id="fried" class="recipe-card">
           <img
             src="https://plus.unsplash.com/premium_photo-1692835633672-50919fdffb75?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="fried chicken dish"
