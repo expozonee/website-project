@@ -4,6 +4,8 @@
   --primary-color: #3467d6;
   --secondary-color: #f8f8f8;
   --tertiary-color: #333;
+  scroll-behavior: smooth;
+  scroll-padding-top: 20px;
 }
 
 body {
