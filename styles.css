@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #3467d6;
-  --secondary-color: #f8f8f8;
+  --secondary-color: #d39510;
   --tertiary-color: #333;
   scroll-behavior: smooth;
   scroll-padding-top: 20px;
@@ -26,7 +26,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 2px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid var(--primary-color);
   width: 80%;
   margin-inline: auto;
 }
@@ -61,6 +61,10 @@ ul {
   display: flex;
   list-style: none;
   gap: 0.5rem;
+}
+
+strong {
+  color: var(--secondary-color);
 }
 
 h2 {
@@ -107,7 +111,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #000000;
+  border-top: 1px solid var(--primary-color);
 
   padding: 1rem;
   text-align: center;
@@ -138,17 +142,29 @@ footer p {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
+  padding: 0.5rem;
   box-shadow: unset;
+  width: 100%;
+}
+
+.main-header-section a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.main-header-section a img {
+  width: 50px;
+  height: 50px;
+  border-radius: 0;
+  object-fit: contain;
 }
 
 .desc-p {
-  max-width: 400px;
-  font-family: "Pacifico", cursive;
-  font-size: 1.3rem;
-  text-align: center;
+  max-width: 500px;
+  font-size: 1.7rem;
   color: var(--primary-color);
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 .home {
@@ -171,16 +187,47 @@ img {
   border-radius: 100%;
 }
 
+.welcome-image img {
+  border-radius: unset;
+  object-fit: contain;
+}
+
 .title {
   /* padding-left: 3rem; */
-  text-align: center;
+  /* text-align: center; */
   font-size: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.title h1 {
+  font-size: 5rem;
+  display: grid;
+  margin: 0;
+}
+
+.text-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.text-title-container h1 .logo {
+  padding-top: 1.5rem;
 }
 
 .logo {
   font-family: "Pacifico", cursive;
   font-size: 2rem;
   color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 0;
+  object-fit: contain;
 }
 
 .logo[logo-title] {
@@ -191,6 +238,16 @@ img {
   background-color: white;
   padding-block: 6rem;
   text-align: center;
+}
+
+.recipes-section-heading {
+  color: var(--secondary-color);
+  padding: 0;
+}
+
+.recipes-section p {
+  font-size: 1.5rem;
+  color: var(--tertiary-color);
 }
 
 .recipes {
@@ -209,6 +266,10 @@ img {
   align-items: center;
   flex-direction: column;
   padding-block: 5rem;
+}
+
+.video-section-heading {
+  color: var(--secondary-color);
 }
 
 .video-section iframe {
