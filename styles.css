@@ -242,7 +242,7 @@ img {
 
 .recipes-section-heading {
   color: var(--secondary-color);
-  padding: 0;
+  padding: 0.5rem;
 }
 
 .recipes-section p {
