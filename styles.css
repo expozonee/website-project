@@ -43,6 +43,7 @@ nav ul li {
   border-radius: 0.5px;
   transition: background-color 0.2s;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 nav ul li:hover {
