@@ -33,6 +33,7 @@ header {
 
 nav ul {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   font-size: 1.2rem;
   font-weight: 600;
@@ -142,6 +143,7 @@ footer p {
 }
 
 .desc-p {
+  max-width: 400px;
   font-family: "Pacifico", cursive;
   font-size: 1.3rem;
   text-align: center;
@@ -152,13 +154,14 @@ footer p {
 .home {
   width: 80%;
   margin-inline: auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   justify-content: space-between;
   padding-block: 6rem;
 }
 
 .home > * {
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -169,7 +172,8 @@ img {
 }
 
 .title {
-  padding-left: 3rem;
+  /* padding-left: 3rem; */
+  text-align: center;
   font-size: 5rem;
 }
 
@@ -205,6 +209,18 @@ img {
   align-items: center;
   flex-direction: column;
   padding-block: 5rem;
+}
+
+.video-section iframe {
+  max-width: 70%;
+  height: 500px;
+}
+
+@media (width <= 1270) {
+  .video-section iframe {
+    width: 100%;
+    height: 500px;
+  }
 }
 
 .recipe-card {
